@@ -16,3 +16,15 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+footer{
+    background-color: black;
+}
+/************Media Query****************/
+@media screen and (max-width: 768px) {
+    .company{
+        display: none;
+    }
+    .company_img img{
+        margin-bottom: 20px;
+    }
+  }
