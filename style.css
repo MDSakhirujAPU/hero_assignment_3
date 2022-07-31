@@ -1,6 +1,8 @@
 .slider1_bg{
-    background-image: url(./images/cover/cover-1.png);
-    background-color: rgba(225, 225, 225, 0.503);
+    background-image: url(./images/cover/cover-11.png);
+}
+.slider2_bg{
+    background-image: url(./images/cover/cover-22.png);
 }
 .silder_btn{
     background-color: #289BDE;

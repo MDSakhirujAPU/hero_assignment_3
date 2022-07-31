@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
     <!--Style css-->
     <link rel="stylesheet" href="style.css">
+    <script src="tailwind.config.js"></script>
 
     <title>Pro Edu</title>
 </head>
 <body>
+    <!-------------------------------------------------Header Navbar---------------------------------------------------------->
     <header class="container mx-auto px-4">
         <nav class="bg-white px-8 sm:px-4 py-2.5 dark:bg-gray-900 w-full top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div class="container flex flex-wrap justify-between items-center mx-auto"">
@@ -52,18 +54,23 @@
           </nav>
     </header>
     <!--Main body start-->
-    <main class="mt-4">
-        <section class="slider_section">
-            <div class="container mx-auto">
+    <main class="mt-7">
+        <!--------------------------carousel section--------------------------------------->
+        <section class="slider_section md:mx-3">
+            <div class="container mx-auto ">
                 <div id="controls-carousel" class="relative" data-carousel="static">
                     <!-- Carousel wrapper -->
-                    <div class="overflow-hidden relative h-56 rounded-lg md:h-96 sm:h-64">
+                    <div class="overflow-hidden relative h-96 rounded-lg md:h-96 lg:h-[32rem] sm:h-96">
                         <!-- Item 1 -->
-                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
-                            <img src="./images/cover/cover-1.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <div class=" slider1_bg duration-700 ease-in-out bg-no-repeat bg-cover absolute inset-0 transition-all transform translate-x-0 z-20 bg-blue-100 flex justify-center  flex-wrap mx-auto items-center" data-carousel-item="active">
+                            <div class="text-center text-white">
+                                <h3 class="font-bold text-3xl uppercase">Learning that gets you</h3><br>
+                                <p class="text-sm">Skills for your present (and your future). Get started with us.</p><br>
+                                <button class="silder_btn px-6 py-4 cursor-pointer rounded">Get Started</button>
+                            </div>
                         </div>
                         <!-- Item 2 -->
-                        <div class=" slider1_bg duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-blue-100 flex justify-center  flex-wrap mx-auto items-center" data-carousel-item="active">
+                        <div class=" slider2_bg duration-700 ease-in-out bg-no-repeat bg-cover absolute inset-0 transition-all transform translate-x-0 z-20 bg-blue-100 flex justify-center  flex-wrap mx-auto items-center" data-carousel-item="active">
                             <div class="text-center text-white">
                                 <h3 class="font-bold text-3xl uppercase">Learning that gets you</h3><br>
                                 <p class="text-sm">Skills for your present (and your future). Get started with us.</p><br>
@@ -71,8 +78,12 @@
                             </div>
                         </div>
                         <!-- Item 3 -->
-                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
-                            <img src="./images/cover/cover-3.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <div class=" slider1_bg duration-700 ease-in-out bg-no-repeat bg-cover absolute inset-0 transition-all transform translate-x-0 z-20 bg-blue-100 flex justify-center  flex-wrap mx-auto items-center" data-carousel-item="active">
+                            <div class="text-center text-white">
+                                <h3 class="font-bold text-3xl uppercase">Learning that gets you</h3><br>
+                                <p class="text-sm">Skills for your present (and your future). Get started with us.</p><br>
+                                <button class="silder_btn px-6 py-4 cursor-pointer rounded">Get Started</button>
+                            </div>
                         </div>
                     </div>
                     <!-- Slider controls -->
@@ -91,7 +102,119 @@
                 </div>
             </div>
         </section>
-
+        <!--------------------------------Course section----------------------------------------------->
+        <section class="mt-10 mb-7">
+            <div class="container mx-auto md:mx-2">
+                <div class="courser_header flex justify-center items-center px-4 py-4">
+                    <div class="text-center text-black">
+                        <h3 class="font-extrabold uppercase text-2xl md:text-2xl ">Discover Our Popular<br> Courses</h3><br>
+                        <p class="text-sm">It is a long established fact that a reader will be distracted by the readable<br> content of a page when looking at its layout.</p>
+                    </div>
+                </div>
+                <div class="course_body grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!---------------------------Course 01------------------------->
+                    <div class="course_1 mx-3">
+                        <a href="#" class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-2xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/course/course-1.png" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Fundamental Of UI/UX Design</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Learners who complete this course should be equipped to apply for entry-level jobs as UI/UX designers. No previous experience is necessary.</p>
+                                <p class="mb-1 text-blue-500 dark:text-blue-300 font-semibold">Price: 20$</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!---------------------------Course 02------------------------->
+                    <div class="course_2 mx-3">
+                        <a href="#" class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-2xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/course/course-2.png" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Javascript Basic to advanced</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Learners who complete this course should be equipped to apply for entry-level jobs. No previous experience is necessary.</p>
+                                <p class="mb-2 text-blue-500 dark:text-blue-300 font-semibold">Price: 30$</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!---------------------------Course 03------------------------->
+                    <div class="course_3 mx-3">
+                        <a href="#" class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-2xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/course/course-3.png" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Fullstack Web Development</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Learners who complete this course should be equipped to apply for entry-level jobs. No previous experience is necessary.</p>
+                                <p class="mb-2 text-blue-500 dark:text-blue-300 font-semibold">Price: 50$</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!---------------------------Course 04------------------------->
+                    <div class="course_4 mx-3">
+                        <a href="#" class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-2xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/course/course-4.png" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Digital Marketing</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Learners who complete the course in this certificate program should be equipped to apply for entry-level jobs. No previous experience is necessary.</p>
+                                <p class="mb-2 text-blue-500 dark:text-blue-300 font-semibold">Price: 40$</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!---------------------------Course 05------------------------->
+                    <div class="course_5 mx-3">
+                        <a href="#" class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-2xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/course/course-5.png" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Photography Basic Rules</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Learners who complete this course should be equipped to apply for entry-level jobs. No previous experience is necessary.</p>
+                                <p class="mb-2 text-blue-500 dark:text-blue-300 font-semibold">Price: 30$</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!---------------------------Course 06------------------------->
+                    <div class="course_6 mx-3">
+                        <a href="#" class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-2xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/course/course-6.png" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Motion Graphics</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Learners who complete this course should be equipped to apply for entry-level jobs. No previous experience is necessary.</p>
+                                <p class="mb-2 text-blue-500 dark:text-blue-300 font-semibold">Price: 35$</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="courser_button mt-4 flex justify-center items-center px-4 py-4">
+                    <div class="text-center text-black">
+                        <button class="cursor-pointer px-5 py-3 bg-blue-500 rounded-md text-white hover:bg-red-700">See All Courses</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------Explore section----------------------------------------------->
+        <section class="mt-10 mb-7 mx-3">
+            <div class="explore_body container mx-auto">
+                <div href="#" class="grid grid-cols-1 items-center bg-white rounded-lg border shadow-md md:grid-cols-2 md:w-full md:max-h-max hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <img class="object-cover w-full h-96 rounded-t-lg md:h-full sm:w-1/2 md:rounded-none md:rounded-l-lg" src="./images/working.png" alt="">
+                    <div class="flex flex-col justify-between gap-6 p-4 leading-normal pl-6">
+                        <h5 class="mb-7 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Explore The elearning <br> Institute</h5>
+                        <p class="mb-7 font-normal text-base text-gray-700 dark:text-gray-400">You start with your passion and knowledge. Then choose a promising topic with the help of our Marketplace Insights tool.<br><br>The way that you teach — what you bring to it — is up to you.</p>
+                        <div class="explore_count grid grid-cols-2 md:grid-cols-3 mb-7">
+                            <div class="explore_count_1">
+                                <h1 class="font-bold text-3xl">3.2K+</h1>
+                                <p class="text-xl">Online Course</p>
+                            </div>
+                            <div class="explore_count_1">
+                                <h1 class="font-bold text-3xl">3.2K+</h1>
+                                <p class="text-xl">Online Course</p>
+                            </div>
+                            <div class="explore_count_1">
+                                <h1 class="font-bold text-3xl">3.2K+</h1>
+                                <p class="text-xl">Online Course</p>
+                            </div>
+                        </div>
+                        <div class="text-left">
+                            <button class="cursor-pointer px-5 py-3 bg-blue-500 rounded-md text-white hover:bg-red-700">See All Courses</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
         
        
