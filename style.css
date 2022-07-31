@@ -7,3 +7,12 @@
 .silder_btn{
     background-color: #289BDE;
 }
+.register{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+}
+.register_body{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
